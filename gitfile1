@@ -14,6 +14,18 @@ pipeline {
                 // Add your test steps here
             }
         }
+    stage('scan'){
+         steps{
+            echo 'scaning...'
+             //add your scan steps here
+        }
+   }
+    stage('UAT'){
+        steps{
+           echo 'User Testing...'
+            // add your test steps here
+             }
+          }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
